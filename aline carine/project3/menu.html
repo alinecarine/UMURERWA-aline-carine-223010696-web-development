@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - Royal Hotel</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:#0b1d3a;
+  color:white;
+}
+
+nav a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  height:50vh;
+  background:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  color:white;
+  text-align:center;
+}
+
+/* MENU SECTION */
+.container{
+  padding:40px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+/* TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td{
+  padding:15px;
+  text-align:center;
+  border-bottom:1px solid #ddd;
+}
+
+th{
+  background:#0b1d3a;
+  color:white;
+}
+
+tr:hover{
+  background:#f1f1f1;
+}
+
+/* FOOTER */
+footer{
+  background:#0b1d3a;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Royal Hotel</h1>
+  <nav>
+    <a href="/project3.html">Home</a>
+    <a href="/about_us.html">About</a>
+    <a href="/menu.html">Menu</a>
+    <a href="/order.html">Order</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Our Delicious Menu</h1>
+    <p>Fresh meals, drinks & juices</p>
+  </div>
+</section>
+
+<!-- MENU TABLE -->
+<section class="container">
+  <h2>Food & Drinks</h2>
+
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+
+    <!-- FISH -->
+    <tr>
+      <td>Fish</td>
+      <td>Grilled Fish</td>
+      <td>$12</td>
+    </tr>
+    <tr>
+      <td>Fish</td>
+      <td>Fried Fish</td>
+      <td>$10</td>
+    </tr>
+
+    <!-- MEAT -->
+    <tr>
+      <td>Meat</td>
+      <td>Chicken</td>
+      <td>$8</td>
+    </tr>
+    <tr>
+      <td>Meat</td>
+      <td>Beef Steak</td>
+      <td>$15</td>
+    </tr>
+
+    <!-- DRINKS -->
+    <tr>
+      <td>Drink</td>
+      <td>Soda</td>
+      <td>$2</td>
+    </tr>
+    <tr>
+      <td>Drink</td>
+      <td>Water</td>
+      <td>$1</td>
+    </tr>
+
+    <!-- JUICE -->
+    <tr>
+      <td>Fresh Juice</td>
+      <td>Orange Juice</td>
+      <td>$3</td>
+    </tr>
+    <tr>
+      <td>Fresh Juice</td>
+      <td>Mango Juice</td>
+      <td>$4</td>
+    </tr>
+  </table>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Royal Hotel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
